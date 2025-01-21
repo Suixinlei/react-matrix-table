@@ -1,59 +1,64 @@
-&-row {
-  flex: 0 0 auto;
+@use './variables' as *;
+@use './mixin' as mixin;
 
-  &-body {
+.#{$prefix} {
+  &-row {
+    flex: 0 0 auto;
+  
+    &-body {
+      flex: 1 1 auto;
+    }
+  }
+  
+  &-row,
+  &-row-body {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  
+  &-area-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  &-fixed-x-area-container {
+    z-index: 100;
+  }
+  &-fixed-y-area-container {
+    z-index: 100;
+  }
+  &-fixed-x-y-area-container {
+    z-index: 101;
+  }
+  
+  &-corner-area,
+  &-col-header-area,
+  &-row-header-area,
+  &-data-area {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  &-corner-area,
+  &-row-header-area {
+    flex: 0 0 auto;
+  }
+  &-col-header-area,
+  &-data-area {
     flex: 1 1 auto;
   }
-}
-
-&-row,
-&-row-body {
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-}
-
-&-area-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-&-fixed-x-area-container {
-  z-index: 100;
-}
-&-fixed-y-area-container {
-  z-index: 100;
-}
-&-fixed-x-y-area-container {
-  z-index: 101;
-}
-
-&-corner-area,
-&-col-header-area,
-&-row-header-area,
-&-data-area {
-  position: relative;
-  overflow: hidden;
-}
-
-&-corner-area,
-&-row-header-area {
-  flex: 0 0 auto;
-}
-&-col-header-area,
-&-data-area {
-  flex: 1 1 auto;
-}
-
-&-corner-area {
-  z-index: 100;
-}
-&-col-header-area,
-&-row-header-area,
-&-row {
-  z-index: 10;
-}
-&-data-area,
-&-row {
-  z-index: 1;
+  
+  &-corner-area {
+    z-index: 100;
+  }
+  &-col-header-area,
+  &-row-header-area,
+  &-row {
+    z-index: 10;
+  }
+  &-data-area,
+  &-row {
+    z-index: 1;
+  }  
 }

@@ -1,13 +1,12 @@
 @use './variables' as *;
 @use './mixin' as mixin;
+@use './area';
+@use './cell'; 
+@use './scrollbar';
 
-.ei-cfo-matrix {
+.#{$prefix} {
   display: flex;
   flex-direction: column;
   border: 1px solid $border-color;
   overflow: hidden;
-
-  @import './area';
-  @import './cell'; 
-  @import './scrollbar';
 }
