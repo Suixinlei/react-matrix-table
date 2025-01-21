@@ -1,10 +1,5 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
-
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+export * from './core';
+// export * from './data-factory';
+// export * from './use-data-factory';
+// export * from './cross-tree-table';
+// export * from './flatten-tree-table';

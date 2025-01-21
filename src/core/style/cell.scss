@@ -1,0 +1,16 @@
+.text-ellipsis {
+  @include text-ellipsis;
+}
+&-cell {
+  position: absolute;
+  border: 1px solid $border-color;
+  padding: 5px;
+  @include text-ellipsis;
+}
+&-tree-icon {
+  margin-right: 4px;
+}
+&-tree-label {
+  vertical-align: middle;
+  @include text-ellipsis;
+}
