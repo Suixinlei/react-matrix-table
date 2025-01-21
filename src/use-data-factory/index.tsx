@@ -31,8 +31,8 @@ export const useDataFactory = (options: useDataFactoryOptions) => {
       setTableMeta({
         rowHeaders: otherProps.rowHeaders,
         colHeaders: otherProps.colHeaders,
-        expandedColIndex: df?.getExpandedColIndex(),
-        expandedRowIndex: df?.getExpandedRowIndex(),
+        expandedColIndex: newDf?.getExpandedColIndex(),
+        expandedRowIndex: newDf?.getExpandedRowIndex(),
       });
 
       return newDf;
