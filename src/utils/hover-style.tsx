@@ -1,6 +1,6 @@
 let hoverCrossStyle: HTMLStyleElement | null = null;
 
-import './hover-style.css';
+import './hover-style.scss';
 
 export const onCellMouseOver = (e: React.MouseEvent<HTMLDivElement>) => {
   const { currentTarget } = e;
