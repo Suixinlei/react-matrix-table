@@ -17,7 +17,7 @@ import { onCellMouseOver, onTableMouseLeave } from '@/utils/hover-style';
 
 import './index.scss';
 
-export interface CnEiFlattenTreeTableProps
+export interface FlattenTreeTableProps
   extends Omit<MatrixTableProps, 'onExpandRow' | 'onExpandCol'> {
   /**
    * 加载状态
@@ -33,7 +33,7 @@ export interface CnEiFlattenTreeTableProps
   onExpandCol?: (dataColIndex: string) => void;
 }
 
-export const CnEiFlattenTreeTable: React.FC<CnEiFlattenTreeTableProps> = (
+export const FlattenTreeTable: React.FC<FlattenTreeTableProps> = (
   props,
 ) => {
   const { loading, onExpandRow, onExpandCol, ...otherProps } = props;
@@ -125,8 +125,8 @@ export const CnEiFlattenTreeTable: React.FC<CnEiFlattenTreeTableProps> = (
   );
 };
 
-CnEiFlattenTreeTable.defaultProps = {
+FlattenTreeTable.defaultProps = {
   loading: false,
 };
 
-CnEiFlattenTreeTable.displayName = 'FlattenTreeTable';
+FlattenTreeTable.displayName = 'FlattenTreeTable';

@@ -1,7 +1,7 @@
 import { CrossTreeTable } from '@/cross-tree-table';
 import { useDataFactory } from '@/use-data-factory';
 
-export default { title: 'ReportingTable 报表渲染' };
+export default { title: 'demo/CrossTreeTable' };
 
 const formatRows = [
   {
