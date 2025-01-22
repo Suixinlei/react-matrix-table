@@ -26,8 +26,6 @@ export interface OriginalRowHeaderProps {
   // original style
   numberStyle: string;
   valueType: string;
-  // 条件格式
-  condition: Record<string, any>;
 }
 
 export interface OriginalColHeaderProps {

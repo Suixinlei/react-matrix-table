@@ -1,4 +1,3 @@
-import * as React from 'react';
 import cx from 'classnames';
 import { IoIosArrowDown } from 'react-icons/io';
 
@@ -10,7 +9,7 @@ export const rowHeaderCellRender = (
   item,
   onExpandRow,
 ) => {
-  const { name, dataRowIndex, children, level, isExpand, numberStyle } = item;
+  const { name, dataRowIndex, children, level, isExpand } = item;
 
   const rowHeaderStyle = {
     paddingLeft: 32 + (level - 1) * 12,
@@ -62,7 +61,6 @@ export const rowHeaderCellRender = (
         title={name}
         className={cx({
           'row-header-title': true,
-          'biz-style': numberStyle === 'BIZ',
         })}
         dangerouslySetInnerHTML={{
           __html: displayName,

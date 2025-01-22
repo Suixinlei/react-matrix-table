@@ -1,0 +1,87 @@
+.demo {
+  .corner-cell {
+    background-color: #b3e5fc;
+  }
+  .fixed-row-cell {
+    background-color: #f8bbd0;
+  }
+  .fixed-col-cell {
+    background-color: #ffe0b2;
+  }
+  .data-cell {
+    background-color: #c8e6c9;
+  }
+  .merged-cell {
+    background-color: #e1bee7;
+  }
+  .merged-cell-center {
+    background-color: #e1bee7;
+    display: flex;
+    align-items: center;
+    writing-mode: vertical-lr;
+    justify-content: center;
+  }
+  .zone-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8bbd0;
+  }
+  .data-cell.dynamical-fixed-x-y-cell,
+  .data-cell.dynamical-fixed-x-cell {
+    padding: 0;
+  }
+  .group-label {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    // writing-mode: vertical-lr;
+    // text-orientation: upright;
+    justify-content: center;
+    background-color: #f8bbd0;
+  }
+  .group-label-inner {
+    // white-space: pre-line;
+    // width: 20px;
+    // margin: 0 auto;
+    // text-align: center;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  }
+  .level-select-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .level-select-group {
+      position: absolute;
+      bottom: 0;
+      left: 23px;
+      transform-origin: left bottom;
+      display: flex;
+      transform: scale(0.5);
+    }
+    .level-select-item {
+      background: #f4f5f8;
+      border: 1px solid #a8b1b9;
+      color: #53555b;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      cursor: pointer;
+      border-radius: 2px;
+      text-align: center;
+      line-height: 22px;
+      font-size: 20px;
+      width: 24px;
+      height: 24px;
+      font-weight: bold;
+    }
+    .level-select-active {
+      background: #e9f2f4;
+      color: #47a4b6;
+      border: 1px solid #47a4b6;
+    }
+  }
+}

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { DataFactory } from '@/data-factory';
 import { MatrixTable } from '@/core';
 
-export default { title: 'DataFactory 数据工厂' };
+export default { title: 'demo/DataFactory' };
 
 const formatRows = [
   {
