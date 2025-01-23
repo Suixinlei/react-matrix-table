@@ -1,4 +1,6 @@
 import type { Preview } from "@storybook/react";
+// antd css
+import 'antd/dist/reset.css'; // 如果使用 antd v5  
 
 const preview: Preview = {
   parameters: {
